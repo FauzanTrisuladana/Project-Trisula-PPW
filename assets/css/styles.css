@@ -1,0 +1,393 @@
+aside {
+  position: fixed;
+  width: 160px;
+  height: 100vh;
+  padding: 0px;
+  background: #262626;
+  text-align: center;
+}
+
+main {
+  margin-left: 160px;
+  padding: 15px;
+  font-family: sans-serif;
+}
+
+.Menu {
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  background: #262626;
+  padding: 2px;
+  width: 150px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 5px;
+  height: auto;
+  transition: background-color 0.5s;
+  padding-left: 4px;
+}
+
+.Menu:hover {
+  background-color: #585858;
+}
+
+.icon-navbar {
+  height: auto ;
+  width: 27px;
+  font-size: 16px;
+}
+
+.navpar {
+  margin: 0;
+  font-size: 16px;
+  margin-left: 2px;
+}
+
+.Navmenus {
+  text-align: left;
+  color: white;
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navatas {
+  display: inline-flex;
+  padding: 2px 8px;
+  background: #B1B4C01A;
+  border-radius: 100px;
+  align-items: center;
+  height: auto;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.linkatasfirst {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 0px;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.linkatas {
+  font-size: 12px;
+  color: red;
+  margin-bottom: 0px;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.linkatas::before {
+  content: "/";
+  color: #72788D80;
+  margin: 0px 5px;
+}
+
+.thissite {
+  color: #72788D;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.thissite::before {
+  content: "/";
+  color: #72788D80;
+  margin: 0px 5px;
+}
+
+.v-navmenu {
+  margin: 5px;
+}
+
+.chart {
+  display: inline-flex;
+}
+
+.jdl {
+  color: #595D6E;
+  font-size: 32px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.profile {
+  color: #595d6e;
+}
+
+.icon-profile {
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  .navpar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .Navmenus {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  aside {
+    width: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #namaakun {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .Menu {
+    margin-bottom: 10px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .icon-navbar {
+    font-size: 20px;
+  }
+}
+
+.logokecil {
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: none;
+}
+
+.logobesar {
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .logobesar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .logokecil {
+    display: block;
+  }
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.chartitle {
+  font-family: sans-serif;
+  color: #595d6e;
+  text-align: center;
+}
+
+th {
+  background: #262626 !important;
+  color: white!important;
+}
+
+.header-action {
+  margin-bottom: 20px;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  transition: transform 0.3s;
+  font-size: 12px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.header-form {
+  color: red;
+  font-weight: bold;
+  background: #262626;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.container-ang {
+  max-width: 700px;
+}
+
+td {
+  max-width: 400px;
+  word-wrap: break-word;
+  min-width: 50px;
+}
+
+.logoheader {
+  height: 30px;
+}
+
+header {
+  height: 70px;
+  background: #262626;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.bodylogin {
+  background: #262626;
+}
+
+.wadah-form-login-signup {
+  min-width: 300px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #dadada ;
+  margin-top: 50px;
+}
+
+.loginpage {
+  height: 100%;
+  min-height: 400px;
+}
+
+.button-eye {
+  background: #959595;
+  transition: ease-in-out 0.5s;
+}
+
+.button-eye:hover {
+  background: #d0d0d0;
+}
+
+@media (min-width: 767px) {
+  .wadah-form-login-signup {
+    min-width: 450px;
+  }
+}
+
+.btn-login {
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+}
+
+.checaktif {
+  font-size: 20px;
+  color: #595d6e;
+}
+
+.wadah-table {
+  font-size: 12px;
+}
+
+.land-button {
+  text-decoration: none;
+  padding: 2px 10px;
+  min-width: 60px;
+  color: white;
+  margin-left: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.transform-translate {
+  transition: transform 0.3s;
+}
+
+.transform-translate:hover {
+  transform: translateY(-5px);
+}
+
+.crcrtop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+}
+
+.bluring {
+  transition: filter 0.5s;
+}
+
+.bluring:hover {
+  filter: blur(2px);
+}
+.searchinput{
+  max-width: 50%;
+}
+@media (max-width : 768px) {
+  .searchinput{
+    max-width: 100%;
+    }
+}
+.card {
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-2px);
+}
+.btn {
+  transition: transform 0.3s;
+  font-size: 12px;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.tbltable {
+  display: block;
+}
+@media (max-width: 767px) {
+  .tbltable {
+    display: none;
+  }
+}
+.form-check-label {
+  font-size: 16px;
+}
+.btn-depan {
+  font-size: 24px;
+}
