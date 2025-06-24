@@ -1,6 +1,6 @@
 aside {
   position: fixed;
-  width: 160px;
+  width: 180px;
   height: 100vh;
   padding: 0px;
   background: #262626;
@@ -8,9 +8,14 @@ aside {
 }
 
 main {
-  margin-left: 160px;
+  margin-left: 180px;
   padding: 15px;
   font-family: sans-serif;
+}
+@media (max-width: 767px) {
+  main {
+    margin-left: 0;
+  }
 }
 
 .Menu {
@@ -130,54 +135,9 @@ p {
 }
 
 @media (max-width: 767px) {
-  .navpar {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .Navmenus {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  aside {
-    width: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  main {
-    margin-left: 60px;
-  }
-}
-
-@media (max-width: 767px) {
   #namaakun {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
-  .Menu {
-    margin-bottom: 10px;
-    width: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  .icon-navbar {
-    font-size: 20px;
-  }
-}
-
-.logokecil {
-  height: 30px;
-  margin-top: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
-  display: none;
 }
 
 .logobesar {
@@ -185,18 +145,6 @@ p {
   margin-top: 20px;
   margin-right: 5px;
   margin-left: 5px;
-}
-
-@media (max-width: 767px) {
-  .logobesar {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .logokecil {
-    display: block;
-  }
 }
 
 canvas {
@@ -390,4 +338,24 @@ header {
 }
 .btn-depan {
   font-size: 24px;
+}
+.accordion-button::after {
+  width: auto;
+  height: auto;
+  content: "▲";
+  font-weight: 100;
+  transform: translateY(-4px);
+}
+.accordion-button:not(.collapsed)::after {
+  width: auto;
+  height: auto;
+  content: "▼";
+  transform: translate(-5px, -4px);
+  transform: rotate(0deg);
+}
+.accordion-button {
+  background-color: #262626;
+}
+.accordion-button:not(.collapsed) {
+  background-color: white;
 }
