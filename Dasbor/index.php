@@ -92,7 +92,7 @@ mysqli_stmt_close($stmt);
             </div>
         </section>
         <section class="mt-5">
-            <div class="row-cols-1 row row-cols-md-2 gy-4">
+            <div class="row-cols-1 row row-cols-md-2 row-cols-lg-3 gy-4">
                 <div class="col">
                     <div class="card p-2">
                         <h5 class="chartitle">Grafik Anggota</h5>
