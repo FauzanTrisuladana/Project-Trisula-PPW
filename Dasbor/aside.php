@@ -35,7 +35,7 @@ session_start();
                     <i class="fas fa-handshake icon-navbar"></i>
                     <p class="navpar">Transaksi</p>
                 </a>
-                <div class="accordion-body collapse" id="transaksiMenu">
+                <div class="accordion-body collapse p-1" id="transaksiMenu">
                     <a class="Menu" href="/Dasbor/Transaksi/Simpanan/">Simpanan</a>
                     <a class="Menu" href="/Dasbor/Transaksi/Pinjaman/">Pinjaman</a>
                     <a class="Menu" href="/Dasbor/Transaksi/Pelunasan/">Pelunasan</a>

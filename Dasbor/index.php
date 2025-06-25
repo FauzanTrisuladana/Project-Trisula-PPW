@@ -92,31 +92,46 @@ mysqli_stmt_close($stmt);
             </div>
         </section>
         <section class="mt-5">
-            <div class="row-cols-1 row row-cols-md-2 row-cols-lg-3 gy-4">
-                <div class="col">
-                    <div class="card p-2">
-                        <h5 class="chartitle">Grafik Anggota</h5>
-                        <canvas id="ChartAnggota"></canvas>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-header align-items-center d-flex justify-content-between">
+                            <h5 class="card-title">Grafik Anggota</h5>
+                        </div>
+                        <div class="card-body p-2">
+                            <canvas id="ChartAnggota"></canvas>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card p-2">
-                        <h5 class="chartitle">Grafik Simpanan</h5>
-                        <canvas id="ChartSimpanan"></canvas>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-header align-items-center d-flex justify-content-between">
+                            <h5 class="card-title">Grafik Simpanan</h5>
+                        </div>
+                        <div class="card-body p-2">
+                            <canvas id="ChartSimpanan"></canvas>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card p-2">
-                        <h5 class="chartitle">Grafik Simpanan</h5>
-                        <canvas id="myChart"></canvas>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-header align-items-center d-flex justify-content-between">
+                            <h5 class="card-title">Grafik Pinjaman</h5>
+                        </div>
+                        <div class="card-body p-2">
+                            <canvas id="myChart"></canvas>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card p-2">
-                        <h5 class="chartitle">Grafik Simpanan</h5>
-                        <canvas id="nextchar">Custom Code</canvas>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow">
+                        <div class="card-header align-items-center d-flex justify-content-between">
+                            <h5 class="card-title">Grafik Pelunasan</h5>
+                        </div>
+                        <div class="card-body p-2">
+                            <canvas id="nextchar">Custom Code</canvas>
+                        </div>
                     </div>
-                </div>
             </div>
         </section>
     </main>
