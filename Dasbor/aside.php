@@ -45,10 +45,10 @@ session_start();
         <hr style="height: 2px;border: none;background: white;">
         <div class="v-navmenu">
             <p class="Navmenus">Setup</p>
-            <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
+            <a class="Menu" href="/Dasbor/SetupKoperasi/"><i class="fa fa-gear icon-navbar"></i>
                 <p class="navpar">Setup Koperasi</p>
             </a>
-            <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
+            <a class="Menu" href="/Dasbor/SetupAkunKeuangan/"><i class="fa fa-gear icon-navbar"></i>
                 <p class="navpar">Setup Akun Keuangan</p>
             </a>
         </div>
@@ -108,10 +108,10 @@ session_start();
             <hr style="height: 2px;border: none;background: white;">
             <div class="v-navmenu">
                 <p class="Navmenus">Setup</p>
-                <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
+                <a class="Menu" href="/Dasbor/SetupKoperasi/"><i class="fa fa-gear icon-navbar"></i>
                     <p class="navpar">Setup Koperasi</p>
                 </a>
-                <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
+                <a class="Menu" href="/Dasbor/SetupAkunKeuangan/"><i class="fa fa-gear icon-navbar"></i>
                     <p class="navpar">Setup Akun Keuangan</p>
                 </a>
             </div>
