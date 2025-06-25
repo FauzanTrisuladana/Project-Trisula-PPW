@@ -55,8 +55,15 @@ mysqli_stmt_close($stmt);
 </head>
 
 <body>
-    <header class="d-flex justify-content-between align-items-center sticky-top"><a class="transform-translate" href="#"><img alt="logo" class="logoheader" src="/assets/img/Trisula%20logo%20besar.png"></a>
-        <nav class="d-flex"><a class="land-button transform-translate" href="#">Tentang</a><a class="land-button transform-translate" href="Login/">Masuk</a><a class="land-button transform-translate" href="Daftar/">Daftar</a></nav>
+    <header class="d-flex justify-content-between align-items-center sticky-top">
+        <a class="transform-translate" href="#">
+            <img alt="logo" class="logoheader" src="/assets/img/Trisula%20logo%20besar.png">
+        </a>
+        <nav class="d-flex">
+            <a class="land-button transform-translate" href="#">Tentang</a>
+            <a class="land-button transform-translate" href="Login/">Masuk</a>
+            <a class="land-button transform-translate" href="Daftar/">Daftar</a>
+        </nav>
     </header>
     <section>
         <div class="container py-4 py-xl-5">

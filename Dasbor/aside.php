@@ -9,9 +9,10 @@ session_start();
 
 }?>
 <header class="d-flex justify-content-between align-items-center sticky-top d-md-none">
-    <button class="btn d-md-none m-3 bg-white" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+    <button class="btn d-md-none m-1 bg-white" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
         ☰
     </button>
+    <img alt="logo" class="logoheader m-1" src="/assets/img/Trisula%20logo%20kecil.png">
 </header>
 <aside class="d-none d-md-flex flex-column justify-content-between overflow-auto">
     <div>
@@ -47,6 +48,9 @@ session_start();
             <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
                 <p class="navpar">Setup Koperasi</p>
             </a>
+            <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
+                <p class="navpar">Setup Akun Keuangan</p>
+            </a>
         </div>
         <hr style="height: 2px;border: none;background: white;margin-top: 5px;margin-bottom: 5px;">
         <div class="v-navmenu">
@@ -73,7 +77,7 @@ session_start();
 </aside>
 
 <div class="d-md-none offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" style="width: 180px; background: #262626;">
-    <aside class="d-flex flex-column justify-content-between overflow-auto offcanvas-body">
+    <aside class="d-flex flex-column justify-content-between overflow-auto">
         <div>
             <a href="/Dasbor/">
                 <img alt="logo" class="logobesar" src="/assets/img/Trisula%20logo%20besar.png">
@@ -106,6 +110,9 @@ session_start();
                 <p class="Navmenus">Setup</p>
                 <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
                     <p class="navpar">Setup Koperasi</p>
+                </a>
+                <a class="Menu" href="/Dasbor/Setup/"><i class="fa fa-gear icon-navbar"></i>
+                    <p class="navpar">Setup Akun Keuangan</p>
                 </a>
             </div>
             <hr style="height: 2px;border: none;background: white;margin-top: 5px;margin-bottom: 5px;">
