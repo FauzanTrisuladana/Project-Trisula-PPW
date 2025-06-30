@@ -31,14 +31,19 @@ session_start();
         <a href="/Dasbor/">
             <img alt="logo" class="logobesar" src="/assets/img/Trisula%20logo%20besar.png">
         </a>
-        <hr style="height: 2px;border: none;background: white;">
-        <div class="v-navmenu">
-            <p class="Navmenus">Main Menu</p>
+        <div class="v-navmenu mt-4">
             <a class="Menu" href="/Dasbor/">
                 <i class="fa fa-home icon-navbar"></i>
                 <p class="navpar">Dasbor</p>
             </a>
-            <a class="Menu" href="/Dasbor/Anggota/">
+        </div>
+        <div class="v-navmenu">
+            <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MainMenu">
+                <i class="fa fa-bars icon-navbar"></i>
+                <p class="navpar">Main Menu</p>
+            </a>
+            <div class="accordion-body collapse p-1" id="MainMenu">
+                <a class="Menu" href="/Dasbor/Anggota/">
                 <i class="fa fa-user icon-navbar"></i>
                 <p class="navpar">Anggota</p>
             </a>
@@ -53,34 +58,54 @@ session_start();
                     <a class="Menu" href="/Dasbor/Transaksi/Pelunasan/">Pelunasan</a>
                 </div>
             <?php endif?>
+            </div>
         </div>
-        <hr style="height: 2px;border: none;background: white;">
         <div class="v-navmenu">
-            <p class="Navmenus">Setup</p>
-            <a class="Menu" href="/Dasbor/SetupKoperasi/"><i class="fa fa-gear icon-navbar"></i>
-                <p class="navpar">Setup Koperasi</p>
+            <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setupMenu">
+                <i class="fa fa-cog icon-navbar"></i>
+                <p class="navpar">Setup</p>
             </a>
-            <a class="Menu" href="/Dasbor/SetupAkunKeuangan/"><i class="fa fa-gear icon-navbar"></i>
-                <p class="navpar">Setup Akun Keuangan</p>
-            </a>
+            <div class="accordion-body collapse p-1" id="setupMenu">
+                <a class="Menu" href="/Dasbor/SetupKoperasi/">
+                    <i class="fa fa-gear icon-navbar"></i>
+                    <p class="navpar">Setup Koperasi</p>
+                </a>
+                <a class="Menu" href="/Dasbor/SetupAkunKeuangan/">
+                    <i class="fa fa-gear icon-navbar"></i>
+                    <p class="navpar">Setup Akun Keuangan</p>
+                </a>
+            </div>
         </div>
-        <hr style="height: 2px;border: none;background: white;margin-top: 5px;margin-bottom: 5px;">
         <div class="v-navmenu">
-            <p class="Navmenus">Ringkasan</p>
-            <a class="Menu" href="/Dasbor/Ringkasan/Simpanan/"><i class="fas fa-hands icon-navbar"></i>
-                <p class="navpar">Simpanan</p>
-            </a><a class="Menu" href="/Dasbor/Ringkasan/Pinjaman/"><i class="fas fa-hands-helping icon-navbar"></i>
-                <p class="navpar">Pinjaman</p>
+            <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ringkasanMenu">
+                <i class="fas fa-check icon-navbar"></i>
+                <p class="navpar">Ringkasan</p>
             </a>
+            <div class="accordion-body collapse p-1" id="ringkasanMenu">
+                <a class="Menu" href="/Dasbor/Ringkasan/Simpanan/">
+                    <i class="fas fa-hands icon-navbar"></i>
+                    <p class="navpar">Simpanan</p>
+                </a><a class="Menu" href="/Dasbor/Ringkasan/Pinjaman/">
+                    <i class="fas fa-hands-helping icon-navbar"></i>
+                    <p class="navpar">Pinjaman</p>
+                </a>
+            </div>
         </div>
-        <hr style="height: 2px;border: none;background: white;margin-top: 5px;margin-bottom: 5px;">
         <div class="v-navmenu">
-            <p class="Navmenus">Laporan</p>
-            <a class="Menu" href="/Dasbor/Laporan/Simpanan/"><i class="fas fa-hands icon-navbar"></i>
-                <p class="navpar">Simpanan</p>
-            </a><a class="Menu" href="/Dasbor/Laporan/Pelunasan/"><i class="fas fa-hands-helping icon-navbar"></i>
-                <p class="navpar">Pelunasan</p>
+            <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laporanMenu">
+                <i class="fa fa-list icon-navbar"></i>
+                <p class="navpar">Laporan</p>
             </a>
+            <div class="accordion-body collapse p-1" id="laporanMenu">
+                <a class="Menu" href="/Dasbor/Laporan/Simpanan/">
+                    <i class="fas fa-hands icon-navbar"></i>
+                    <p class="navpar">Simpanan</p>
+                </a>
+                <a class="Menu" href="/Dasbor/Laporan/Pelunasan/">
+                    <i class="fas fa-hands-helping icon-navbar"></i>
+                    <p class="navpar">Pelunasan</p>
+                </a>
+            </div>
         </div>
     </div>
     <div class="mb-3">
@@ -89,19 +114,24 @@ session_start();
 </aside>
 
 <div class="d-md-none offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" style="width: 180px; background: #262626;">
-    <aside class="d-flex flex-column justify-content-between overflow-auto">
+    <aside class="d-none d-md-flex flex-column justify-content-between overflow-auto">
         <div>
             <a href="/Dasbor/">
                 <img alt="logo" class="logobesar" src="/assets/img/Trisula%20logo%20besar.png">
             </a>
-            <hr style="height: 2px;border: none;background: white;">
-            <div class="v-navmenu">
-                <p class="Navmenus">Main Menu</p>
+            <div class="v-navmenu mt-4">
                 <a class="Menu" href="/Dasbor/">
                     <i class="fa fa-home icon-navbar"></i>
                     <p class="navpar">Dasbor</p>
                 </a>
-                <a class="Menu" href="/Dasbor/Anggota/">
+            </div>
+            <div class="v-navmenu">
+                <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#MainMenu">
+                    <i class="fa fa-bars icon-navbar"></i>
+                    <p class="navpar">Main Menu</p>
+                </a>
+                <div class="accordion-body collapse p-1" id="MainMenu">
+                    <a class="Menu" href="/Dasbor/Anggota/">
                     <i class="fa fa-user icon-navbar"></i>
                     <p class="navpar">Anggota</p>
                 </a>
@@ -110,40 +140,60 @@ session_start();
                         <i class="fas fa-handshake icon-navbar"></i>
                         <p class="navpar">Transaksi</p>
                     </a>
-                    <div class="accordion-body collapse" id="transaksiMenu">
+                    <div class="accordion-body collapse p-1" id="transaksiMenu">
                         <a class="Menu" href="/Dasbor/Transaksi/Simpanan/">Simpanan</a>
                         <a class="Menu" href="/Dasbor/Transaksi/Pinjaman/">Pinjaman</a>
                         <a class="Menu" href="/Dasbor/Transaksi/Pelunasan/">Pelunasan</a>
                     </div>
                 <?php endif?>
+                </div>
             </div>
-            <hr style="height: 2px;border: none;background: white;">
             <div class="v-navmenu">
-                <p class="Navmenus">Setup</p>
-                <a class="Menu" href="/Dasbor/SetupKoperasi/"><i class="fa fa-gear icon-navbar"></i>
-                    <p class="navpar">Setup Koperasi</p>
+                <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#setupMenu">
+                    <i class="fa fa-cog icon-navbar"></i>
+                    <p class="navpar">Setup</p>
                 </a>
-                <a class="Menu" href="/Dasbor/SetupAkunKeuangan/"><i class="fa fa-gear icon-navbar"></i>
-                    <p class="navpar">Setup Akun Keuangan</p>
-                </a>
+                <div class="accordion-body collapse p-1" id="setupMenu">
+                    <a class="Menu" href="/Dasbor/SetupKoperasi/">
+                        <i class="fa fa-gear icon-navbar"></i>
+                        <p class="navpar">Setup Koperasi</p>
+                    </a>
+                    <a class="Menu" href="/Dasbor/SetupAkunKeuangan/">
+                        <i class="fa fa-gear icon-navbar"></i>
+                        <p class="navpar">Setup Akun Keuangan</p>
+                    </a>
+                </div>
             </div>
-            <hr style="height: 2px;border: none;background: white;margin-top: 5px;margin-bottom: 5px;">
             <div class="v-navmenu">
-                <p class="Navmenus">Ringkasan</p>
-                <a class="Menu" href="/Dasbor/Ringkasan/Simpanan/"><i class="fas fa-hands icon-navbar"></i>
-                    <p class="navpar">Simpanan</p>
-                </a><a class="Menu" href="/Dasbor/Ringkasan/Pinjaman/"><i class="fas fa-hands-helping icon-navbar"></i>
-                    <p class="navpar">Pinjaman</p>
+                <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ringkasanMenu">
+                    <i class="fas fa-check icon-navbar"></i>
+                    <p class="navpar">Ringkasan</p>
                 </a>
+                <div class="accordion-body collapse p-1" id="ringkasanMenu">
+                    <a class="Menu" href="/Dasbor/Ringkasan/Simpanan/">
+                        <i class="fas fa-hands icon-navbar"></i>
+                        <p class="navpar">Simpanan</p>
+                    </a><a class="Menu" href="/Dasbor/Ringkasan/Pinjaman/">
+                        <i class="fas fa-hands-helping icon-navbar"></i>
+                        <p class="navpar">Pinjaman</p>
+                    </a>
+                </div>
             </div>
-            <hr style="height: 2px;border: none;background: white;margin-top: 5px;margin-bottom: 5px;">
             <div class="v-navmenu">
-                <p class="Navmenus">Laporan</p>
-                <a class="Menu" href="/Dasbor/Laporan/Simpanan/"><i class="fas fa-hands icon-navbar"></i>
-                    <p class="navpar">Simpanan</p>
-                </a><a class="Menu" href="/Dasbor/Laporan/Pelunasan/"><i class="fas fa-hands-helping icon-navbar"></i>
-                    <p class="navpar">Pelunasan</p>
+                <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laporanMenu">
+                    <i class="fa fa-list icon-navbar"></i>
+                    <p class="navpar">Laporan</p>
                 </a>
+                <div class="accordion-body collapse p-1" id="laporanMenu">
+                    <a class="Menu" href="/Dasbor/Laporan/Simpanan/">
+                        <i class="fas fa-hands icon-navbar"></i>
+                        <p class="navpar">Simpanan</p>
+                    </a>
+                    <a class="Menu" href="/Dasbor/Laporan/Pelunasan/">
+                        <i class="fas fa-hands-helping icon-navbar"></i>
+                        <p class="navpar">Pelunasan</p>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="mb-3">
