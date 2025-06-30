@@ -31,7 +31,7 @@ session_start();
         <a href="/Dasbor/">
             <img alt="logo" class="logobesar" src="/assets/img/Trisula%20logo%20besar.png">
         </a>
-        <div class="v-navmenu mt-4">
+        <div class="v-navmenu mt-5">
             <a class="Menu" href="/Dasbor/">
                 <i class="fa fa-home icon-navbar"></i>
                 <p class="navpar">Dasbor</p>
@@ -78,7 +78,7 @@ session_start();
         </div>
         <div class="v-navmenu">
             <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ringkasanMenu">
-                <i class="fas fa-check icon-navbar"></i>
+                <i class="fa fa-list icon-navbar"></i>
                 <p class="navpar">Ringkasan</p>
             </a>
             <div class="accordion-body collapse p-1" id="ringkasanMenu">
@@ -93,7 +93,7 @@ session_start();
         </div>
         <div class="v-navmenu">
             <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laporanMenu">
-                <i class="fa fa-list icon-navbar"></i>
+                <i class="fas fa-receipt icon-navbar"></i>
                 <p class="navpar">Laporan</p>
             </a>
             <div class="accordion-body collapse p-1" id="laporanMenu">
@@ -114,7 +114,7 @@ session_start();
 </aside>
 
 <div class="d-md-none offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" style="width: 180px; background: #262626;">
-    <aside class="d-none d-md-flex flex-column justify-content-between overflow-auto">
+    <aside class="d-flex flex-column justify-content-between overflow-auto">
         <div>
             <a href="/Dasbor/">
                 <img alt="logo" class="logobesar" src="/assets/img/Trisula%20logo%20besar.png">
@@ -166,7 +166,7 @@ session_start();
             </div>
             <div class="v-navmenu">
                 <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ringkasanMenu">
-                    <i class="fas fa-check icon-navbar"></i>
+                    <i class="fa fa-list icon-navbar"></i>
                     <p class="navpar">Ringkasan</p>
                 </a>
                 <div class="accordion-body collapse p-1" id="ringkasanMenu">
@@ -181,7 +181,7 @@ session_start();
             </div>
             <div class="v-navmenu">
                 <a class="Menu accordion-button d-flex align-items-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laporanMenu">
-                    <i class="fa fa-list icon-navbar"></i>
+                    <i class="fas fa-receipt icon-navbar"></i>
                     <p class="navpar">Laporan</p>
                 </a>
                 <div class="accordion-body collapse p-1" id="laporanMenu">

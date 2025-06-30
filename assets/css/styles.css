@@ -66,6 +66,7 @@ a {
 
 .navatas {
   display: inline-flex;
+  flex-wrap: wrap;
   padding: 2px 8px;
   background: #B1B4C01A;
   border-radius: 100px;
@@ -113,6 +114,8 @@ p {
 
 .v-navmenu {
   margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .chart {
