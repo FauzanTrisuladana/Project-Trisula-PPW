@@ -1,10 +1,10 @@
 <?php
-require_once '../../databaseconfig.php';
-require_once '../../sessionconfig.php';
+require_once '../../../databaseconfig.php';
+require_once '../../../sessionconfig.php';
 
 // Mulai session
 startSession();
-$asal = 'Dasbor/Setup';
+$asal = 'Dasbor/Setup/Koperasi';
 if (!isLoggedIn()) {
     header('Location: /Login/?redirect=' . urlencode($asal));
     exit();
@@ -21,7 +21,6 @@ mysqli_stmt_execute($stmt);
 mysqli_stmt_bind_result($stmt, $nama_depan, $nama_belakang);
 mysqli_stmt_fetch($stmt);
 mysqli_stmt_close($stmt);
-
 ?>
 
 <?php
@@ -184,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 </head>
 
 <body class="mt-0">
-    <?php require_once '../../Dasbor/aside.php'; ?>
+    <?php require_once '../../../Dasbor/aside.php'; ?>
     <main>
         <section class="d-flex justify-content-between">
             <div class="w-auto">
@@ -194,8 +193,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <a class="linkatas" href="/Dasbor/">
                         <span id="namakop">
                             <?php echo htmlspecialchars($nama_koperasi) ;?>
-                        </span></a>
-                    <p class="thissite">Setup Koperasi</p>
+                        </span>
+                    </a>
+                    <a href="/Dasbor/" class="linkatas">Setup</a>
+                    <p class="thissite">Koperasi</p>
                 </div>
             </div>
             <div class="dropdown d-none d-md-block">

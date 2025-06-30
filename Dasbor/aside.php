@@ -66,11 +66,11 @@ session_start();
                 <p class="navpar">Setup</p>
             </a>
             <div class="accordion-body collapse p-1" id="setupMenu">
-                <a class="Menu" href="/Dasbor/SetupKoperasi/">
+                <a class="Menu" href="/Dasbor/Setup/Koperasi/">
                     <i class="fa fa-gear icon-navbar"></i>
                     <p class="navpar">Setup Koperasi</p>
                 </a>
-                <a class="Menu" href="/Dasbor/SetupAkunKeuangan/">
+                <a class="Menu" href="/Dasbor/Setup/AkunKeuangan/">
                     <i class="fa fa-gear icon-navbar"></i>
                     <p class="navpar">Setup Akun Keuangan</p>
                 </a>
