@@ -91,15 +91,37 @@ mysqli_stmt_close($stmt);
                   <a class="dropdown-item" href="/Logout/">Keluar</a></div>
             </div>
         </section>
-        <section class="mt-5">
-            <div class="row g-4">
+        <section class="mt-5 row g-2">
+            <div class="col-md-6 col-lg-3">
+                <div class="border-start rounded border-5 border-primary p-3 shadow">
+                    <p>halo semua</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="border-start rounded border-5 border-success p-3 shadow">
+                    <p>halo semua</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="border-start rounded border-5 border-warning p-3 shadow">
+                    <p>halo semua</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="border-start rounded border-5 border-black p-3 shadow">
+                    <p>halo semua</p>
+                </div>
+            </div>
+        </section>
+        <section class="mt-3">
+            <div class="row gy-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="card shadow">
                         <div class="card-header align-items-center d-flex justify-content-between">
                             <h5 class="card-title">Grafik Anggota</h5>
                         </div>
-                        <div class="card-body p-2">
-                            <canvas id="ChartAnggota"></canvas>
+                        <div class="card-body p-2 divchart">
+                            <canvas id="ChartAnggota" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -108,8 +130,8 @@ mysqli_stmt_close($stmt);
                         <div class="card-header align-items-center d-flex justify-content-between">
                             <h5 class="card-title">Grafik Simpanan</h5>
                         </div>
-                        <div class="card-body p-2">
-                            <canvas id="ChartSimpanan"></canvas>
+                        <div class="card-body p-2 divchart">
+                            <canvas id="ChartSimpanan" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -119,7 +141,7 @@ mysqli_stmt_close($stmt);
                             <h5 class="card-title">Grafik Pinjaman</h5>
                         </div>
                         <div class="card-body p-2">
-                            <canvas id="myChart"></canvas>
+                            <canvas id="myChart" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -128,10 +150,11 @@ mysqli_stmt_close($stmt);
                         <div class="card-header align-items-center d-flex justify-content-between">
                             <h5 class="card-title">Grafik Pelunasan</h5>
                         </div>
-                        <div class="card-body p-2">
-                            <canvas id="nextchar">Custom Code</canvas>
+                        <div class="card-body p-2 divchart">
+                            <canvas id="nextchar" class="chart">Custom Code</canvas>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
     </main>
