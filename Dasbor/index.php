@@ -78,8 +78,8 @@ mysqli_stmt_close($stmt);
                     </p>
                 </div>
             </div>
-            <div class="dropdown">
-              <a class="d-flex align-items-center profile dropdown-toggle" data-bs-toggle="dropdown">
+            <div class="dropdown d-none d-md-block">
+              <a class="d-flex align-items-center profile" data-bs-toggle="dropdown">
                 <i class="far fa-user-circle icon-profile"></i>
                 <span id="namaakun" class="ms-2 me-2 namaakun">
                   <?php echo htmlspecialchars($nama_depan) . " " . htmlspecialchars($nama_belakang)?>

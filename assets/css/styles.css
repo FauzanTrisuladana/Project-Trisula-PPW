@@ -134,11 +134,11 @@ p {
   font-size: 40px;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #namaakun {
     display: none;
   }
-}
+} */
 
 .logobesar {
   height: 30px;
@@ -360,4 +360,7 @@ header {
 }
 .chart {
   max-height: 300px;
+}
+.namaakun-header {
+  color: white;
 }

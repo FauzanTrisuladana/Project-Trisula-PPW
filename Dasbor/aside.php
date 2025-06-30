@@ -12,7 +12,19 @@ session_start();
     <button class="btn d-md-none m-1 bg-white" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
         ☰
     </button>
-    <img alt="logo" class="logoheader m-1" src="/assets/img/Trisula%20logo%20kecil.png">
+    <div class="dropdown">
+        <a class="d-flex align-items-center profile" data-bs-toggle="dropdown">
+        <i class="far fa-user-circle icon-profile namaakun-header"></i>
+        <span id="namaakun" class="ms-2 me-2 namaakun-header">
+            <?php echo htmlspecialchars($nama_depan) . " " . htmlspecialchars($nama_belakang)?>
+        </span>
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/Dasbor/Profil/">Profil</a>
+            <a class="dropdown-item" href="/Setings/">Ganti Password</a>
+            <a class="dropdown-item" href="/Logout/">Keluar</a>
+        </div>
+    </div>
 </header>
 <aside class="d-none d-md-flex flex-column justify-content-between overflow-auto">
     <div>
