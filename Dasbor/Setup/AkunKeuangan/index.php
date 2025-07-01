@@ -78,6 +78,47 @@ mysqli_stmt_close($stmt);
                 </div>
             </div>
         </section>
+        <section class="mt-5">
+            <div class="table-responsive wadah-table">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="tno">No Perkiraan</th>
+                            <th>Jenis Akun</th>
+                            <th>Akun</th>
+                            <th>Saldo Awal</th>
+                            <?php if ($_SESSION['role']!='N'): ?>
+                                <th>Aksi</th>
+                            <?php endif; ?>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="jenisakun">
+                            <td>10001</td>
+                            <td>Kas</td>
+                            <td>Kas</td>
+                            <td>Rp. 0</td>
+                            <?php if ($_SESSION['role']!='N'): ?>
+                                <td>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                </td>
+                            <?php endif; ?>
+                        </tr>
+                        <tr>
+                            <td>10002</td>
+                            <td>Bank</td>
+                            <td>Bank</td>
+                            <td>Rp. 0</td>
+                            <?php if ($_SESSION['role']!='N'): ?>
+                                <td>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                </td>
+                            <?php endif; ?>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
     </main>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/js/script.js"></script>

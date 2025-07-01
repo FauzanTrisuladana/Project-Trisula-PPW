@@ -38,6 +38,13 @@ main {
   background-color: #585858;
 }
 
+.card .Menu {
+  background-color: unset;
+  color: unset;
+  border: #26262610 solid 1px;
+  border-radius: unset;
+}
+
 .icon-navbar {
   height: auto ;
   width: 27px;
@@ -335,7 +342,7 @@ header {
 .btn-depan {
   font-size: 24px;
 }
-.accordion-button::after {
+.v-navmenu .accordion-button::after {
   width: auto;
   height: auto;
   content: "⏷";
@@ -346,16 +353,16 @@ header {
   color: #cecece;
   transform: rotate(-90deg);
 }
-.accordion-button:not(.collapsed)::after {
+.v-navmenu .accordion-button:not(.collapsed)::after {
   width: auto;
   height: auto;
   transform: translate(-5px, -4px);
   transform: rotate(0deg);
 }
-.accordion-button {
+.v-navmenu .accordion-button {
   background-color: #262626;
 }
-.accordion-button:not(.collapsed) {
+.v-navmenu .accordion-button:not(.collapsed) {
   background-color: white;
 }
 .card-header {
@@ -366,4 +373,10 @@ header {
 }
 .namaakun-header {
   color: white;
+}
+.jenisakun {
+  background-color: #94d353 !important;
+}
+section aside {
+  background-color: unset;
 }
